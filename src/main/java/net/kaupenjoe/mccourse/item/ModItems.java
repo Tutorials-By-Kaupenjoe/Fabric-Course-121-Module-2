@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
 import net.kaupenjoe.mccourse.item.custom.ChainsawItem;
+import net.kaupenjoe.mccourse.item.custom.HammerItem;
 import net.kaupenjoe.mccourse.item.custom.PaxelItem;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -43,6 +44,8 @@ public class ModItems {
 
     public static final Item FLUORITE_PAXEL = registerItem("fluorite_paxel",
             new PaxelItem(ModToolMaterials.FLUORITE, new Item.Settings()));
+    public static final Item FLUORITE_HAMMER = registerItem("fluorite_hammer",
+            new HammerItem(ModToolMaterials.FLUORITE, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
