@@ -49,6 +49,15 @@ public class ModItems {
     public static final Item FLUORITE_HAMMER = registerItem("fluorite_hammer",
             new HammerItem(ModToolMaterials.FLUORITE, new Item.Settings()));
 
+    public static final Item FLUORITE_HELMET = registerItem("fluorite_helmet",
+            new ArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
+    public static final Item FLUORITE_CHESTPLATE = registerItem("fluorite_chestplate",
+            new ArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(18))));
+    public static final Item FLUORITE_LEGGINGS = registerItem("fluorite_leggings",
+            new ArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(18))));
+    public static final Item FLUORITE_BOOTS = registerItem("fluorite_boots",
+            new ArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(18))));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MCCourseMod.MOD_ID, name), item);
