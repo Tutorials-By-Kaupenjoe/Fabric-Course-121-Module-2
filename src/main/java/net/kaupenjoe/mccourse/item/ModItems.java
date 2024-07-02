@@ -3,10 +3,7 @@ package net.kaupenjoe.mccourse.item;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.kaupenjoe.mccourse.MCCourseMod;
-import net.kaupenjoe.mccourse.item.custom.ChainsawItem;
-import net.kaupenjoe.mccourse.item.custom.HammerItem;
-import net.kaupenjoe.mccourse.item.custom.ModEffectSwordItem;
-import net.kaupenjoe.mccourse.item.custom.PaxelItem;
+import net.kaupenjoe.mccourse.item.custom.*;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.item.tooltip.TooltipType;
@@ -50,7 +47,7 @@ public class ModItems {
             new HammerItem(ModToolMaterials.FLUORITE, new Item.Settings()));
 
     public static final Item FLUORITE_HELMET = registerItem("fluorite_helmet",
-            new ArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
+            new ModArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(18))));
     public static final Item FLUORITE_CHESTPLATE = registerItem("fluorite_chestplate",
             new ArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(18))));
     public static final Item FLUORITE_LEGGINGS = registerItem("fluorite_leggings",
