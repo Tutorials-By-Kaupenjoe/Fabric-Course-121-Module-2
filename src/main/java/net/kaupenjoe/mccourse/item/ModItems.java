@@ -49,6 +49,9 @@ public class ModItems {
     public static final Item FLUORITE_PAXEL = registerItem("fluorite_paxel",
             new PaxelItem(ModToolMaterials.FLUORITE,
                     new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FLUORITE, 4, -2.5f))));
+    public static final Item FLUORITE_HAMMER = registerItem("fluorite_hammer",
+            new HammerItem(ModToolMaterials.FLUORITE,
+                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FLUORITE, 8, -3.5f))));
 
 
     private static Item registerItem(String name, Item item) {
