@@ -46,6 +46,10 @@ public class ModItems {
             new HoeItem(ModToolMaterials.FLUORITE,
                     new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.FLUORITE, 0, -3f))));
 
+    public static final Item FLUORITE_PAXEL = registerItem("fluorite_paxel",
+            new PaxelItem(ModToolMaterials.FLUORITE,
+                    new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FLUORITE, 4, -2.5f))));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MCCourseMod.MOD_ID, name), item);
