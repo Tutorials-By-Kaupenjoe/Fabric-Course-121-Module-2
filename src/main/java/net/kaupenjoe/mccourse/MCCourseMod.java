@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.kaupenjoe.mccourse.block.ModBlocks;
 import net.kaupenjoe.mccourse.item.ModItemGroups;
 import net.kaupenjoe.mccourse.item.ModItems;
-import net.kaupenjoe.mccourse.util.HammerUsageEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -23,7 +22,5 @@ public class MCCourseMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
-
-		PlayerBlockBreakEvents.BEFORE.register(new HammerUsageEvent());
 	}
 }
