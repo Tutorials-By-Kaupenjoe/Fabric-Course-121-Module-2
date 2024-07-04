@@ -31,8 +31,8 @@ public class ModItems {
     public static final Item STARLIGHT_ASHES = registerItem("starlight_ashes", new Item(new Item.Settings()));
 
     public static final Item FLUORITE_SWORD = registerItem("fluorite_sword",
-            new SwordItem(ModToolMaterials.FLUORITE,
-                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FLUORITE, 3, -2.4f))));
+            new ModEffectSwordItem(ModToolMaterials.FLUORITE,
+                    new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.FLUORITE, 3, -2.4f)), StatusEffects.LEVITATION));
     public static final Item FLUORITE_PICKAXE = registerItem("fluorite_pickaxe",
             new PickaxeItem(ModToolMaterials.FLUORITE,
                     new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.FLUORITE, 1, -2.8f))));
