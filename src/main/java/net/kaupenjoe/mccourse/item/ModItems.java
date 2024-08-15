@@ -66,6 +66,8 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings()
                     .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))));
 
+    public static final Item FLUORITE_HORSE_ARMOR = registerItem("fluorite_horse_armor",
+            new AnimalArmorItem(ModArmorMaterials.FLUORITE_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

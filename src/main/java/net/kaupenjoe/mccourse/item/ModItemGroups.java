@@ -37,6 +37,8 @@ public class ModItemGroups {
                         entries.add(ModItems.FLUORITE_LEGGINGS);
                         entries.add(ModItems.FLUORITE_BOOTS);
 
+                        entries.add(ModItems.FLUORITE_HORSE_ARMOR);
+
                     }).build());
 
     public static final ItemGroup FLUORITE_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
