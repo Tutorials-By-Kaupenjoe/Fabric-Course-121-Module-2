@@ -1,3 +1,5 @@
-// 1.21.1	2024-08-15T14:12:21.3596359	MC Course Mod/Tags for minecraft:item
+// 1.21.1	2024-08-15T14:56:24.1664875	MC Course Mod/Tags for minecraft:item
+f47b9f1d92280907d6167a544a50c41c1fce1788 data\minecraft\tags\item\trim_materials.json
+4604a2436b1811e8f84815fe50ec8cf9deaa453a data\minecraft\tags\item\trim_templates.json
 39767b6cbff598797ba651948a4667315c10a861 data\minecraft\tags\item\trimmable_armor.json
 a3dd2be9543f1d3d65745189df75bdc89374c135 data\mccourse\tags\item\transformable_items.json
